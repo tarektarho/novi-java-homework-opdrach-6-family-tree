@@ -161,7 +161,6 @@ public class Person implements IPerson {
     public List<Person> getNieces() {
         List<Person> nieces = new ArrayList<>();
         for (Person sibling : siblings) {
-            System.out.println(sibling);
             if (!sibling.getChildren().isEmpty()) {
                 for (Person niece : sibling.getChildren()) {
                     if (niece.getSex().equals("Female")) {
